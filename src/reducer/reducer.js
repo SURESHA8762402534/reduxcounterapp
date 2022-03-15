@@ -1,7 +1,9 @@
-const reducer = (state, action) => {
+// const statevalue = {count:0}
+
+const reducer = (state , action) => {
     if(state === undefined){
         return {
-            count : 0
+            count : 0,
         }
     }
 
@@ -9,7 +11,12 @@ const reducer = (state, action) => {
         case "INCREMENT" :
             state.count = state.count + 1
             break;
+
             case "DECREASE":
+                // state = {
+                //     ...state,
+                    
+                // }
                 state.count = state.count - 1
                 // console.log('clicked');
                 break;
